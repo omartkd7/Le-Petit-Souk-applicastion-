@@ -1,7 +1,12 @@
 import { StyleSheet, View } from "react-native";
+import Home from "./page/Home";
 
 export default function Index() {
-  return <View style={styles.container}></View>;
+  return (
+    <View style={styles.container}>
+      <Home />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -9,5 +14,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#ffffff",
   },
 });
