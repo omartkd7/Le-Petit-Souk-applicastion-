@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 
 function Mine() {
   return (
@@ -11,22 +11,46 @@ function Mine() {
 
       <View style={styles.productList}>
         <View style={styles.productCard}>
+          <Image
+            style={styles.imageproduct}
+            source={require("@/assets/IMAGE FOOD MAR/1.png")}
+          />
           <Text style={styles.productName}>Produit 1</Text>
         </View>
 
         <View style={styles.productCard}>
+          <Image
+            style={styles.imageproduct}
+            source={require("@/assets/IMAGE FOOD MAR/2.png")}
+          />
+
           <Text style={styles.productName}>Produit 2</Text>
         </View>
 
         <View style={styles.productCard}>
+          <Image
+            style={styles.imageproduct}
+            source={require("@/assets/IMAGE FOOD MAR/3.png")}
+          />
+
           <Text style={styles.productName}>Produit 3</Text>
         </View>
 
         <View style={styles.productCard}>
+          <Image
+            style={styles.imageproduct}
+            source={require("@/assets/IMAGE FOOD MAR/4.png")}
+          />
+
           <Text style={styles.productName}>Produit 4</Text>
         </View>
 
         <View style={styles.productCard}>
+          <Image
+            style={styles.imageproduct}
+            source={require("@/assets/IMAGE FOOD MAR/5.png")}
+          />
+
           <Text style={styles.productName}>Produit 5</Text>
         </View>
       </View>
@@ -67,17 +91,23 @@ const styles = StyleSheet.create({
   },
   productCard: {
     backgroundColor: "#fff",
-    borderRadius: 16,
-    padding: 20,
+    borderRadius: 20,
+    overflow: "hidden",
     shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.12,
+    shadowRadius: 6,
+    elevation: 4,
   },
   productName: {
-    fontSize: 16,
-    fontWeight: "600",
+    fontSize: 17,
+    fontWeight: "700",
     color: "#3B1A00",
+    padding: 14,
+  },
+  imageproduct: {
+    width: "100%",
+    height: 180,
+    resizeMode: "cover",
   },
 });
