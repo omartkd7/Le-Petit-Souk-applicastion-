@@ -1,8 +1,10 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StatusBar, StyleSheet, Text, View } from "react-native";
 
 function Home() {
   return (
     <View style={styles.container}>
+      <StatusBar barStyle="light-content" />
+
       <View style={styles.topSection}>
         <Image source={require("./img/LOGO.png")} style={styles.logo} />
       </View>
@@ -56,11 +58,9 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "800",
     color: "#3B1A00",
-    letterSpacing: 1,
   },
   subtitle: {
     fontSize: 13,
-    color: "#8B5E3C",
     textAlign: "center",
   },
   divider: {

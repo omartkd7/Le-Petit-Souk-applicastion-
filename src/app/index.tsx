@@ -1,9 +1,11 @@
-import { StyleSheet, View } from "react-native";
+import { StatusBar, StyleSheet, View } from "react-native";
 import Home from "./page/Home";
 
 export default function Index() {
   return (
     <View style={styles.container}>
+      <StatusBar barStyle="light-content" />
+
       <Home />
     </View>
   );
