@@ -1,4 +1,6 @@
-import { ScrollView } from "react-native";
+import {
+  ScrollView
+} from "react-native";
 
 function Mine() {
   return (
